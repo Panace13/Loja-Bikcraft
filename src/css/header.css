@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #000;
+  height: 40px;
+}
+
+.menu {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 8px;
+  margin-right: 20px;
+}
