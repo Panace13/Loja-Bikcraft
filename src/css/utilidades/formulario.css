@@ -40,6 +40,6 @@
     grid-template-columns: 1fr;
   }
   .form .col-2 {
-    grid-template-columns: 1fr;
+    grid-column: 1;
   }
 }
