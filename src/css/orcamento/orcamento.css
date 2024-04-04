@@ -159,29 +159,28 @@
     border-radius: 5px 5px 0 0;
   }
 
-  .orcamento-produto > label{
+  .orcamento-produto > label {
     max-width: 80%;
   }
 }
 
 @media (max-width: 400px) {
-
-  .font-1-xxl{
+  .font-1-xxl {
     font-size: 2.5rem;
   }
 
-  .orcamento-produto{
+  .orcamento-produto {
     grid-template-columns: 1fr;
   }
-  .orcamento-produto > label{
+  .orcamento-produto > label {
     max-width: 80%;
   }
 
-  .orcamento-conteudo > label{
+  .orcamento-conteudo > label {
     max-width: 80%;
   }
 
-  .orcamento-detalhes{
+  .orcamento-detalhes {
     max-width: 83%;
     padding: 12px;
   }

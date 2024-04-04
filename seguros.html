@@ -8,6 +8,8 @@
   <title>Seguros</title>
   <meta name="description" content="Seguros">
 
+  <link rel="preload" href="./src/css/style.css" as="style">
+
   <link rel="stylesheet" href="./src/css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +54,7 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura estadual</li>
         </ul>
-        <a class="botao secundario" href="./orcamento.html">Inscreva-se</a>
+        <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
       </div>
       <div class="seguros-item">
         <h3 class="font-1-xl cor-p1">OURO</h3>
@@ -65,7 +67,7 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao Clube Bikcraft</li>
         </ul>
-        <a class="botao" href="./orcamento.html">Inscreva-se</a>
+        <a class="botao" href="./orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
       </div>
     </div>
   </main>
@@ -127,17 +129,18 @@
     <h2 class="font-1-xxl">perguntas frequentes<span class="cor-p1">.</span></h2>
     <dl>
       <div>
-        <dt class="font-1-m-b">Qual a forma de pagamento?</dt>
-        <dd class="font-2-s cor-9">Aceitamos cartões de crédito, boleto e PIX.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta1" aria-expanded="true">Qual a forma de
+            pagamento?</button></dt>
+        <dd class="font-2-s cor-19 ativa" id="pergunta1">Aceitamos cartões de crédito, boleto e PIX.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Como posso entrar em contato?</dt>
-        <dd class="font-2-s cor-9">Procure pela nossa página no Facebook, no Instagram ou pelo número no WhatsApp, todos
+        <dt><button class="font-1-m-b" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+        <dd class="font-2-s cor-9" id="pergunta2">Procure pela nossa página no Facebook, no Instagram ou pelo número no WhatsApp, todos
           estão disponíveis na nossa aba de contato.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Garantia</dt>
-        <dd class="font-2-s cor-9">Nossa garantia das peças e produtos são de 1 ano.</dd>
+        <dt class="font-1-m-b"><button class="font-1-m-b" aria-controls="pergunta3" aria-expanded="false">Garantia</button></dt>
+        <dd class="font-2-s cor-9" id="pergunta3">Nossa garantia das peças e produtos são de 1 ano.</dd>
       </div>
     </dl>
   </article>
@@ -182,6 +185,7 @@
       </div>
     </div>
   </footer>
+  <script src="./src/js/script.js"></script>
 </body>
 
 </html>
